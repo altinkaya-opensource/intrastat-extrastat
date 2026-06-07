@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2025-05-29 16:26+0000\n"
+"PO-Revision-Date: 2026-05-19 12:46+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.10.4\n"
+"X-Generator: Weblate 5.15.2\n"
 
 #. module: intrastat_product
 #. odoo-python
@@ -1085,6 +1085,13 @@ msgid "Missing unit of measure"
 msgstr "Unità di misura mancante"
 
 #. module: intrastat_product
+#. odoo-python
+#: code:addons/intrastat_product/models/intrastat_product_declaration.py:0
+#, python-format
+msgid "Missing weight on product %s."
+msgstr "Peso mancante nel prodotto %s."
+
+#. module: intrastat_product
 #: model:ir.model.fields,field_description:intrastat_product.field_intrastat_product_declaration__month
 msgid "Month"
 msgstr "Mese"
@@ -1786,9 +1793,9 @@ msgid ""
 "fiscal position was wrong on the invoice (the fiscal position was "
 "<i>%(fiscal_position)s</i>)."
 msgstr ""
-"La P.IVA è <em>%(vat)s</em>. Se il partner è dall'Irlanda del Nord, questa P."
-"IVA deve essere aggiornata alla sua nuova P.IVA cheinizia con <em>XI</em> a "
-"seguito della Brexit. Se il partner è della Gran Bretagnam, può essere che "
+"La P.IVA è <em>%(vat)s</em>. Se il partner è dall'Irlanda del Nord, questa "
+"P.IVA deve essere aggiornata alla sua nuova P.IVA cheinizia con <em>XI</em> "
+"a seguito della Brexit. Se il partner è della Gran Bretagnam, può essere che "
 "la posizione fiscale sia errata nella fattura (la posizione fiscale era "
 "<i>%(fiscal_position)s</i>)."
 
